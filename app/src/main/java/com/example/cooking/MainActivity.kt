@@ -1,5 +1,6 @@
 package com.example.cooking
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -16,8 +17,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        
+        //해쉬값 확인
         val keyHash = Utility.getKeyHash(this)
         Log.d("Hash", keyHash)
+
+
 
         val callback: (OAuthToken?, Throwable?) -> Unit = { token, error ->
             if (error != null) {
@@ -52,10 +57,23 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             else if (token != null) {
-                Toast.makeText(this, "로그인에 성공하였습니다.", Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this, "로그인에 성공하였습니다.", Toast.LENGTH_SHORT).show()
+                //토근정보 loginkakao에 넘기기
+                UserApiClient.instance.accessTokenInfo { tokenInfo, error ->
+                    if (error != null) {
+                        //Toast.makeText(this, "토큰 정보 보기 실패", Toast.LENGTH_SHORT).show()
+                    }
+                    else if (tokenInfo != null) {
+                        //Toast.makeText(this, "토큰 정보 보기 성공", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, login_kakao::class.java)
+                        startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+                    }
+                }
+                val intent = Intent(this, login_kakao::class.java)
+                startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
             }
         }
-
+        //로그인 수정
         kakao_login_button.setOnClickListener {
             if(UserApiClient.instance.isKakaoTalkLoginAvailable(this)){
                 UserApiClient.instance.loginWithKakaoTalk(this, callback = callback)
