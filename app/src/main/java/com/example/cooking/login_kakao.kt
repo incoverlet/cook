@@ -18,8 +18,6 @@ class login_kakao : AppCompatActivity() {
 
 
         //토근정보 profile에 넘기기
-
-
         UserApiClient.instance.me { user, error ->
             id.text = "회원번호: ${user?.id}"
             nickname.text = "닉네임: ${user?.kakaoAccount?.profile?.nickname}"
@@ -39,7 +37,6 @@ class login_kakao : AppCompatActivity() {
                 finish()
             }
         }
-
 
         kakao_profile_button.setOnClickListener {
             UserApiClient.instance.logout { error ->

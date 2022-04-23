@@ -13,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cooking">
         <activity
+            android:name=".spaghetti_menu3"
+            android:exported="false" />
+        <activity
+            android:name=".spaghetti_menu2"
+            android:exported="false" />
+        <activity
+            android:name=".spaghetti_menu1"
+            android:exported="false" />
+        <activity
+            android:name=".spaghetti_menu"
+            android:exported="false" />
+        <activity
             android:name=".advance_level1"
             android:exported="false" />
         <activity
