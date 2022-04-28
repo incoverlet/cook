@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cooking">
         <activity
+            android:name=".menu_list"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".spaghetti_menu3"
             android:exported="false" />
         <activity
@@ -34,9 +40,6 @@
             android:name=".profile"
             android:exported="false"
             android:label="@string/title_activity_profile" />
-        <activity
-            android:name=".ui.profile"
-            android:exported="false" />
         <activity
             android:name=".login_kakao"
             android:exported="false" />
@@ -65,5 +68,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
