@@ -1,226 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu_list">
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/menu_list_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="400dp"
-        android:background="#446D6D6D"
-        android:fontFamily="sans-serif"
-        android:gravity="bottom"
-        android:text=" New receipe\n 지금바로 도전해 보세요"
-        android:textColor="#000000"
-
-        android:lineSpacingExtra ="-10dp"
-        android:paddingLeft="10sp"
-        android:paddingBottom="25sp"
-        android:textSize="33sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <TextView
-        android:id="@+id/menu_list_textView2"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="360dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="340dp"
-        android:background="#006D6D6D"
+        android:orientation="vertical"
+        android:weightSum="26">
 
-        android:fontFamily="sans-serif"
-        android:gravity="top"
-        android:lineSpacingExtra="-10dp"
-        android:paddingLeft="10sp"
-        android:text=" 윤희영님을 위한 단계별 추천 레시피"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/menu_list_btn_pass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginRight="270dp"
-        android:background="@drawable/round"
-        android:fontFamily="sans-serif"
-        android:includeFontPadding="false"
-        android:text="Level 1"
-        android:textColor="#000"
-        android:textSize="22sp"
-
-        android:textStyle="bold" />
-
-    <ScrollView
-        android:id="@+id/menu_list_scroll"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="460dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="160dp">
-
-        <GridLayout
-            android:id="@+id/menu_list_layout"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:rotation="0">
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
-            <ImageView
-                android:layout_margin="8dp"
-                android:id="@+id/menu_list_level_imageView1"
-                android:layout_width="180dp"
-                android:layout_height="100dp"
-                android:layout_row="0"
-                android:layout_column="1"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/garhicbread"
-                />
-
-            <ImageView
-                android:id="@+id/menu_list_level_imageView2"
-                android:layout_width="180dp"
-                android:layout_height="100dp"
-                android:layout_row="0"
-                android:layout_column="2"
-                android:layout_margin="8dp"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/garhicbread" />
-
-            <ImageView
-                android:id="@+id/menu_list_level_imageView3"
-                android:layout_width="180dp"
-                android:layout_height="100dp"
-                android:layout_row="1"
-                android:layout_column="1"
-                android:layout_margin="8dp"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/garhicbread" />
-
-            <ImageView
-                android:id="@+id/menu_list_level_imageView4"
-                android:layout_width="180dp"
-                android:layout_height="100dp"
-                android:layout_row="1"
-                android:layout_column="2"
-                android:layout_margin="8dp"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/garhicbread" />
-        </GridLayout>
-    </ScrollView>
-
-
-
-    <Button
-        android:id="@+id/menu_list_btn_pass2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="600dp"
-        android:layout_marginRight="270dp"
-        android:background="@drawable/round"
-        android:fontFamily="sans-serif"
-        android:includeFontPadding="false"
-        android:text="Level 2"
-        android:textColor="#000"
-        android:textSize="22sp"
-
-        android:textStyle="bold" />
-
-    <ScrollView
-        android:id="@+id/menu_list_scroll2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="660dp"
-        android:layout_marginEnd="0dp"
-        >
-
-        <GridLayout
-            android:id="@+id/menu_list_layout2"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:rotation="0">
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="#446D6D6D" />
 
-            <ImageView
-                android:layout_margin="8dp"
-                android:id="@+id/menu_list_level_imageView21"
-                android:layout_width="180dp"
-                android:layout_height="100dp"
-                android:layout_row="0"
-                android:layout_column="1"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/garhicbread"
-                />
+        <TextView
+            android:id="@+id/main_textView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:autoSizeTextType="uniform"
+            android:background="#446D6D6D"
+            android:fontFamily="sans-serif"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp"
+            android:text="New receope \n지금바로 도전해 보세요"
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/menu_list_level_imageView22"
-                android:layout_width="180dp"
-                android:layout_height="100dp"
-                android:layout_row="0"
-                android:layout_column="2"
-                android:layout_margin="8dp"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/garhicbread" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
-            <ImageView
-                android:id="@+id/menu_list_level_imageView23"
-                android:layout_width="180dp"
-                android:layout_height="100dp"
-                android:layout_row="1"
-                android:layout_column="1"
-                android:layout_margin="8dp"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/garhicbread" />
+        <TextView
+            android:id="@+id/menu_list_textView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=" 윤희영님을 위한 단계별 추천 레시피"
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/menu_list_level_imageView24"
-                android:layout_width="180dp"
-                android:layout_height="100dp"
-                android:layout_row="1"
-                android:layout_column="2"
-                android:layout_margin="8dp"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/garhicbread" />
-        </GridLayout>
-    </ScrollView>
+        //LEVEL1
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="20">
 
 
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/menu_list_btn_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="6"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/round"
+                android:includeFontPadding="false"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                android:text="Level 1"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:id="@+id/bio_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/li_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        //LEVEL2
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/menu_list_btn_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="6"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/round"
+                android:includeFontPadding="false"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                android:text="Level 2"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:id="@+id/bio_scroll2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/li_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>
 

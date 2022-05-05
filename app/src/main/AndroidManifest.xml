@@ -12,6 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cooking">
+
+        <activity
+            android:name=".rec_menu_ac"
+            android:exported="false" />
         <activity
             android:name=".menu_list"
             android:exported="false" />
@@ -68,4 +72,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
