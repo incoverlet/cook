@@ -1,168 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="26">
+        android:fillViewport="true">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="4"
-            android:background="#446D6D6D" />
-
-        <TextView
-            android:id="@+id/main_textView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="4"
-            android:autoSizeTextType="uniform"
-            android:background="#446D6D6D"
-            android:fontFamily="sans-serif"
-            android:gravity="bottom"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="20dp"
-            android:text="New receope \n지금바로 도전해 보세요"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <TextView
-            android:id="@+id/menu_list_textView2"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:autoSizeTextType="uniform"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text=" 윤희영님을 위한 단계별 추천 레시피"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-        //LEVEL1
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginBottom="5dp"
-            android:layout_weight="2"
-            android:orientation="horizontal"
-            android:weightSum="20">
-
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
 
             <View
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/menu_list_btn_1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_weight="6"
-                android:autoSizeTextType="uniform"
-                android:background="@drawable/round"
-                android:includeFontPadding="false"
-                android:padding="12dp"
-                android:scaleType="centerInside"
-                android:text="Level 1"
-                android:textColor="#000"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="4"
-            android:orientation="horizontal">
-
-            <HorizontalScrollView
-                android:id="@+id/bio_scroll"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="5dp">
-
-                <LinearLayout
-                    android:id="@+id/li_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                </LinearLayout>
-            </HorizontalScrollView>
-        </LinearLayout>
-        //LEVEL2
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginBottom="5dp"
-            android:layout_weight="2"
-            android:orientation="horizontal"
-            android:weightSum="20">
-
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
 
             <View
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/menu_list_btn_2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_weight="6"
-                android:autoSizeTextType="uniform"
-                android:background="@drawable/round"
-                android:includeFontPadding="false"
-                android:padding="12dp"
-                android:scaleType="centerInside"
-                android:text="Level 2"
-                android:textColor="#000"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="4"
-            android:orientation="horizontal">
-
-            <HorizontalScrollView
-                android:id="@+id/bio_scroll2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="5dp">
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:background="#446D6D6D" />
 
-                <LinearLayout
-                    android:id="@+id/li_2"
+            <TextView
+                android:id="@+id/main_textView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:background="#446D6D6D"
+                android:fontFamily="sans-serif"
+                android:gravity="bottom"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                android:text="New receipe \n지금바로 도전해 보세요"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15" />
+
+            <TextView
+                android:id="@+id/menu_list_textView2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=" 윤희영님을 위한 단계별 추천 레시피"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15" />
+
+
+
+            //LEVEL1
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0.25"
+                android:orientation="horizontal"
+                android:weightSum="20">
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" />
+
+                <Button
+                    android:id="@+id/menu_list_btn_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="6"
+                    android:autoSizeTextType="uniform"
+                    android:background="@drawable/round"
+                    android:includeFontPadding="false"
+                    android:padding="12dp"
+                    android:scaleType="centerInside"
+                    android:text="Level 1"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:id="@+id/bio_scroll"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:padding="5dp"
+                    tools:ignore="SpeakableTextPresentCheck">
 
-                </LinearLayout>
-            </HorizontalScrollView>
+                    <LinearLayout
+                        android:id="@+id/li_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            //LEVEL2
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0.25"
+                android:orientation="horizontal"
+                android:weightSum="20">
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/menu_list_btn_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="6"
+                    android:autoSizeTextType="uniform"
+                    android:background="@drawable/round"
+                    android:includeFontPadding="false"
+                    android:padding="12dp"
+                    android:scaleType="centerInside"
+                    android:text="Level 2"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:id="@+id/bio_scroll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:id="@+id/li_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            //LEVEL3
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0.25"
+                android:orientation="horizontal"
+                android:weightSum="20">
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/menu_list_btn_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="6"
+                    android:autoSizeTextType="uniform"
+                    android:background="@drawable/round"
+                    android:includeFontPadding="false"
+                    android:padding="12dp"
+                    android:scaleType="centerInside"
+                    android:text="Level 3"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:id="@+id/bio_scroll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:id="@+id/li_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            //underbar
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
 

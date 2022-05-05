@@ -31,8 +31,7 @@ class menu_list : AppCompatActivity() {
                 ViewGroup.LayoutParams.MATCH_PARENT,// CardView width
                 ViewGroup.LayoutParams.MATCH_PARENT // CardView height
             )
-            layoutParams.setMargins(50,50,50,50)
-            layoutParams.width = 300
+            layoutParams.setMargins(75,75,75,75)
             val menuCardView = CardView(this)
             // Set bottom margin for card view
             //layoutParams.bottomMargin = 50
@@ -41,11 +40,12 @@ class menu_list : AppCompatActivity() {
             // Set the card view corner radius
             menuCardView.radius = 12F
             // Set the card view content padding
-            menuCardView.setContentPadding(25,25,25,25)
+            menuCardView.setContentPadding(75,75,75,75)
             // Set the card view background color
             menuCardView.setCardBackgroundColor(Color.LTGRAY)
             //list에 해당하는 그림으로 변경
-            menuCardView.setBackgroundDrawable(mageDrawableArray.getDrawable(i))
+            var drawable = mageDrawableArray.getDrawable(i)
+            menuCardView.setBackgroundDrawable(drawable)
             // Set card view elevation
             menuCardView.cardElevation = 8F
             // Set card view maximum elevation
@@ -54,7 +54,7 @@ class menu_list : AppCompatActivity() {
             menuCardView.setOnClickListener{
                 Toast.makeText(
                    applicationContext,
-                   "해당하는 음식 이동",
+                   "해당하는 음식 이동"+ drawable.toString(),
                     Toast.LENGTH_SHORT).show()
             }
             // Add LinearLayout to the CardView
@@ -70,8 +70,7 @@ class menu_list : AppCompatActivity() {
                 ViewGroup.LayoutParams.MATCH_PARENT,// CardView width
                 ViewGroup.LayoutParams.MATCH_PARENT // CardView height
             )
-            layoutParams.setMargins(50,50,50,50)
-            layoutParams.width = 300
+            layoutParams.setMargins(75,75,75,75)
             val menuCardView = CardView(this)
             // Set bottom margin for card view
             //layoutParams.bottomMargin = 50
@@ -80,7 +79,7 @@ class menu_list : AppCompatActivity() {
             // Set the card view corner radius
             menuCardView.radius = 12F
             // Set the card view content padding
-            menuCardView.setContentPadding(25,25,25,25)
+            menuCardView.setContentPadding(75,75,75,75)
             // Set the card view background color
             menuCardView.setCardBackgroundColor(Color.LTGRAY)
             //list에 해당하는 그림으로 변경
@@ -101,6 +100,43 @@ class menu_list : AppCompatActivity() {
             // Finally, add the CardView in root layout
             li_2.addView(menuCardView)
         }
+
+        for( i in 1..6) {
+            // Initialize a new LayoutParams instance, CardView width and height
+            val layoutParams = RelativeLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,// CardView width
+                ViewGroup.LayoutParams.MATCH_PARENT // CardView height
+            )
+            layoutParams.setMargins(75,75,75,75)
+            val menuCardView = CardView(this)
+            // Set bottom margin for card view
+            //layoutParams.bottomMargin = 50
+            // Set the card view layout params
+            menuCardView.layoutParams = layoutParams
+            // Set the card view corner radius
+            menuCardView.radius = 12F
+            // Set the card view content padding
+            menuCardView.setContentPadding(75,75,75,75)
+            // Set the card view background color
+            menuCardView.setCardBackgroundColor(Color.LTGRAY)
+            //list에 해당하는 그림으로 변경
+            menuCardView.setBackgroundDrawable(mageDrawableArray2.getDrawable(i))
+            // Set card view elevation
+            menuCardView.cardElevation = 8F
+            // Set card view maximum elevation
+            menuCardView.maxCardElevation = 12F
+            // Set a click listener for card view
+            menuCardView.setOnClickListener{
+                Toast.makeText(
+                    applicationContext,
+                    "해당하는 음식 이동",
+                    Toast.LENGTH_SHORT).show()
+            }
+            // Add LinearLayout to the CardView
+            menuCardView.addView(generateCardView())
+            // Finally, add the CardView in root layout
+            li_3.addView(menuCardView)
+        }
     }
 
     // Custom method to generate an image view
@@ -115,9 +151,9 @@ class menu_list : AppCompatActivity() {
         //restaurantNumber.text = "02-000-0000"
         //restaurantNumber.textSize = 17f
         //restaurantNumber.setTextColor(Color.WHITE)
-        //val restaurantAddress = TextView(this)
-        //restaurantAddress.text = "잠실역 7번출구 300m"
-        //restaurantAddress.textSize = 17f
+        val restaurantAddress = TextView(this)
+        restaurantAddress.text = "스파게티"
+        restaurantAddress.textSize = 17f
         //restaurantAddress.setTextColor(Color.WHITE)
         //cardLinearLayout.addView(restaurantName)
         //cardLinearLayout.addView(restaurantNumber)
