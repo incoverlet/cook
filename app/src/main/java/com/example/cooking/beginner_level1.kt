@@ -11,8 +11,9 @@ class beginner_level1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_beginner_level1)
 
+        var i = spaghetti_menu1::class.java;
         beginner_imageButton1.setOnClickListener {
-            val intent = Intent(this, spaghetti_menu1::class.java)
+            val intent = Intent(this, i)
             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
         }
 

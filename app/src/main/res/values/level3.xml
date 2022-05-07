@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <array name="lv33">
+    <array name="lv22">
         <item>@drawable/omurice</item>
         <item>@drawable/garhicbread</item>
         <item>@drawable/omurice</item>

@@ -13,19 +13,6 @@ class profile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        Advanced_button.setOnClickListener {
-            val intent = Intent(this, advance_level1::class.java)
-            startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
-        }
 
-        Beginner_button3.setOnClickListener {
-            val intent = Intent(this, beginner_level1::class.java)
-            startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
-        }
-
-        Intermediate_button2.setOnClickListener {
-            val intent = Intent(this, advance_level1::class.java)
-            startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
-        }
     }
 }
