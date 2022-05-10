@@ -22,59 +22,22 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <TextView
-            android:id="@+id/name_spagetti_textView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:autoSizeMinTextSize="30dp"
-            android:layout_weight="2"
-            android:autoSizeTextType="uniform"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:padding="15dp"
-            android:text="요리이름"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:background="#6E6E6E"
-            android:layout_weight="0.05" />
 
         <TextView
-            android:id="@+id/name_spagetti_textView3"
+            android:id="@+id/menu_spagetti1_2_text1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
-            android:autoSizeMinTextSize="30dp"
-            android:autoSizeTextType="uniform"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:padding="15dp"
-            android:text="권장소비 소요 시간 15"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/name_spagetti_textView2"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="5"
+            android:layout_weight="9"
             android:autoSizeTextType="uniform"
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:padding="10dp"
-            android:text="요리이름"
+            android:text="재료시간\n재료시간\n재료시간\n재료시간\n재료시간\n재료시간\n"
             android:textColor="#000000"
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/menu_spagetti_button1"
+            android:id="@+id/menu_spagetti1_2_button1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_alignParentEnd="true"
