@@ -40,7 +40,7 @@ class spaghetti_menu2 : AppCompatActivity() {
 
             //recyclerView = findViewById();
             spaghetti2_textView3.text = "[1 단계]. 면 삶기"	// TextView 세팅
-            spaghetti2_textView4.text = "물이 끓으면 면을 넣습니다. \\n 처음에는 건드리지 말고, \\n 면이 풀어지면 살살 저어줍니다."	// TextView 세팅
+            spaghetti2_textView4.text = "물이 끓으면 면을 넣습니다. \n 처음에는 건드리지 말고, \n 면이 풀어지면 살살 저어줍니다."	// TextView 세팅
 
             spaghetti2_button2.setOnClickListener {
                 if(flag == 1){

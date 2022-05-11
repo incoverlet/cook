@@ -72,7 +72,7 @@
             app:srcCompat="@drawable/spaghetti2" />
 
         <TextView
-            android:id="@+id/spaghetti3_textView3"
+            android:id="@+id/spaghetti4_textView3"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
@@ -92,7 +92,7 @@
             app:layout_constraintVertical_bias="0.965" />
 
         <TextView
-            android:id="@+id/spaghetti3_textView4"
+            android:id="@+id/spaghetti4_textView4"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2.5"

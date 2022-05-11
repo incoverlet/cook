@@ -9,8 +9,8 @@ import kotlinx.android.synthetic.main.activity_spaghetti_menu1.*
 
 class MainActivity2 : AppCompatActivity() {
 
-    public var username = "김태담"
-    public var rec_menu = "마카롱"
+    public var username = "윤희영"
+    public var rec_menu = "파전"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -17,7 +17,6 @@ class beginner_level1 : AppCompatActivity() {
             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
         }
 
-
         beginner_imageButton2.setOnClickListener {
             val intent = Intent(this, beginner_level1::class.java)
             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))

@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cooking">
         <activity
+            android:name=".spaghetti_menu4"
+            android:exported="false" />
+        <activity
             android:name=".spaghetti_menu1_2"
             android:exported="false" />
         <activity

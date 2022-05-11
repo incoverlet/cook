@@ -11,7 +11,9 @@ import kotlinx.android.synthetic.main.activity_spaghetti_menu1.*
 class spaghetti_menu1 : AppCompatActivity() {
 
     public var text1_foodname = "스파게티"
-    public var text2  = "매뉴 제료내용들\n매뉴 제료내용들\n매뉴 제료내용들\n매뉴 제료내용들\n"
+    public var text2  = "재료 \n "+" 스파게티 면\n" +
+            "스파게티 소스\n" +
+            "냄비\n"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
