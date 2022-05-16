@@ -7,13 +7,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.annotation.RequiresApi
-import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_spaghetti_menu3.*
 import kotlinx.android.synthetic.main.activity_spaghetti_menu4.*
+import kotlinx.android.synthetic.main.activity_spaghetti_menu5.*
 import java.util.*
 import kotlin.math.ceil
 
-class spaghetti_menu4 : AppCompatActivity() {
+class spaghetti_menu5 : AppCompatActivity() {
     private var timerTask: Timer? = null
     private var time = 0
     private var cookingTime_min = 7; // 요리 시간 분
@@ -26,13 +25,11 @@ class spaghetti_menu4 : AppCompatActivity() {
     private var kkk = 0;
     private var flag = 0;
 
-
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_spaghetti_menu4)
+        setContentView(R.layout.activity_spaghetti_menu5)
 
-        //인텐트 받기
         if (intent.hasExtra("min1") && intent.hasExtra("sec1"))
         {
             min1 = intent.getIntExtra("min1", 0)
@@ -43,8 +40,8 @@ class spaghetti_menu4 : AppCompatActivity() {
         }
 
         //recyclerView = findViewById();
-        spaghetti4_textView3.text = "[3 단계].  볶기 "	// TextView 세팅
-        spaghetti4_textView4.text = "소스에 삶은 면을 넣고\n" +
+        spaghetti5_textView3.text = "[3 단계].  볶기 "	// TextView 세팅
+        spaghetti5_textView4.text = "소스에 삶은 면을 넣고\n" +
                 "중간불에서 볶아줍니다"
 
         minmin = min1
@@ -94,8 +91,8 @@ class spaghetti_menu4 : AppCompatActivity() {
             // UI조작을 위한 메서드
             runOnUiThread {
                 var bb = df1.format(secsec + sec)
-                spaghetti4_textView5.text = "$a : $bb"	// TextView 세팅
-                spaghetti4_textView6.text = "$c : $d"	// TextView 세팅
+                spaghetti5_textView5.text = "$a : $bb"	// TextView 세팅
+                spaghetti5_textView6.text = "$c : $d"	// TextView 세팅
             }
 
             // 7분 조리시간

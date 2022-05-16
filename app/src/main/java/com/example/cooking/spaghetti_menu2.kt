@@ -42,6 +42,8 @@ class spaghetti_menu2 : AppCompatActivity() {
             spaghetti2_textView3.text = "[1 단계]. 면 삶기"	// TextView 세팅
             spaghetti2_textView4.text = "물이 끓으면 면을 넣습니다. \n 처음에는 건드리지 말고, \n 면이 풀어지면 살살 저어줍니다."	// TextView 세팅
 
+
+            //인텐트 넘기기
             spaghetti2_button2.setOnClickListener {
                 if(flag == 1){
                     val intent = Intent(this, spaghetti_menu3::class.java)
@@ -49,7 +51,6 @@ class spaghetti_menu2 : AppCompatActivity() {
                     intent.putExtra("sec1", secsec)
                     startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
                 }
-
             }
             timerTask = kotlin.concurrent.timer(period = 1000) {	// timer() 호출
                 time++	// period=10, 0.01초마다 time를 1씩 증가
