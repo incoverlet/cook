@@ -2,12 +2,9 @@
 <resources>
     <array name="lv11">
         <item>@drawable/curry</item>
-        <item>@drawable/spaghetti</item>
-        <item>@drawable/curry</item>
-        <item>@drawable/spaghetti</item>
-        <item>@drawable/curry</item>
-        <item>@drawable/spaghetti</item>
-        <item>@drawable/curry</item>
-        <item>@drawable/spaghetti</item>
+        <item>@drawable/spagetti4</item>
+        <item>@drawable/garlicbread5</item>
+        <item>@drawable/mixedrice5</item>
+
     </array>
 </resources>

@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <array name="lv22">
-        <item>@drawable/omurice</item>
-        <item>@drawable/garhicbread</item>
-        <item>@drawable/omurice</item>
-        <item>@drawable/garhicbread</item>
-        <item>@drawable/omurice</item>
-        <item>@drawable/garhicbread</item>
-        <item>@drawable/omurice</item>
-        <item>@drawable/garhicbread</item>
+    <array name="lv33">
+        <item>@drawable/miykk6</item>
+        <item>@drawable/gimch8</item>
+        <item>@drawable/pajun7</item>
+        <item>@drawable/rose_menu</item>
     </array>
 </resources>

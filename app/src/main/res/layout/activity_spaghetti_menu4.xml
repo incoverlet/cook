@@ -69,7 +69,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.138"
-            app:srcCompat="@drawable/spaghetti3" />
+            app:srcCompat="@drawable/spagetti3" />
 
         <TextView
             android:id="@+id/spaghetti4_textView3"
@@ -153,6 +153,7 @@
                 app:layout_constraintVertical_bias="0.979" />
         </LinearLayout>
         <Button
+            android:id="@+id/spaghetti4_button2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.5"

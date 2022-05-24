@@ -6,24 +6,28 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    android:weightSum="10"
+    android:weightSum="5"
     >
 
 
     <FrameLayout
+        android:adjustViewBounds="true"
         android:id="@+id/mainNaviFragmentContainer"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="9">
+        android:layout_height="10dp"
+        android:layout_weight="9"
+        android:weightSum="1">
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
+            android:fillViewport="true"
+            android:adjustViewBounds="true">
 
             <LinearLayout
+                android:adjustViewBounds="true"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:orientation="vertical"
                 android:weightSum="10">
 
@@ -247,64 +251,8 @@
                     </HorizontalScrollView>
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_weight="0.25"
-                    android:orientation="horizontal"
-                    android:weightSum="20">
-
-
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1" />
-
-                    <Button
-                        android:id="@+id/menu_list_btn_4"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_weight="6"
-                        android:autoSizeTextType="uniform"
-                        android:background="@drawable/round"
-                        android:includeFontPadding="false"
-                        android:padding="12dp"
-                        android:scaleType="centerInside"
-                        android:text="Level 4"
-                        android:textColor="#000"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1.5"
-                    android:orientation="horizontal">
-
-                    <HorizontalScrollView
-                        android:id="@+id/bio_scroll4"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="5dp"
-                        tools:ignore="SpeakableTextPresentCheck">
-
-                        <LinearLayout
-                            android:id="@+id/li_4"
-                            android:layout_width="match_parent"
-                            android:layout_height="500dp"
-                            android:orientation="horizontal">
-
-                        </LinearLayout>
-                    </HorizontalScrollView>
-                </LinearLayout>
                 //underbar
             </LinearLayout>
-
-
-
         </ScrollView>
     </FrameLayout>
 

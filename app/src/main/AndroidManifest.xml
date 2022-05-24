@@ -13,6 +13,186 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cooking">
         <activity
+            android:name=".pajun9"
+            android:exported="false" />
+        <activity
+            android:name=".pajun8"
+            android:exported="false" />
+        <activity
+            android:name=".pajun7"
+            android:exported="false" />
+        <activity
+            android:name=".pajun6"
+            android:exported="false" />
+        <activity
+            android:name=".pajun5"
+            android:exported="false" />
+        <activity
+            android:name=".pajun4"
+            android:exported="false" />
+        <activity
+            android:name=".pajun3"
+            android:exported="false" />
+        <activity
+            android:name=".pajun2"
+            android:exported="false" />
+        <activity
+            android:name=".pajun1"
+            android:exported="false" />
+        <activity
+            android:name=".gimch_menu8"
+            android:exported="false" />
+        <activity
+            android:name=".gimch_menu7"
+            android:exported="false" />
+        <activity
+            android:name=".gimch_menu6"
+            android:exported="false" />
+        <activity
+            android:name=".gimch_menu5"
+            android:exported="false" />
+        <activity
+            android:name=".gimch_menu4"
+            android:exported="false" />
+        <activity
+            android:name=".gimch_menu3"
+            android:exported="false" />
+        <activity
+            android:name=".gimch_menu2"
+            android:exported="false" />
+        <activity
+            android:name=".gimch_menu1"
+            android:exported="false" />
+        <activity
+            android:name=".rose_menu7"
+            android:exported="false" />
+        <activity
+            android:name=".rose_menu6"
+            android:exported="false" />
+        <activity
+            android:name=".rose_menu5"
+            android:exported="false" />
+        <activity
+            android:name=".rose_menu4"
+            android:exported="false" />
+        <activity
+            android:name=".rose_menu3"
+            android:exported="false" />
+        <activity
+            android:name=".rose_menu2"
+            android:exported="false" />
+        <activity
+            android:name=".rose_menu1"
+            android:exported="false" />
+        <activity
+            android:name=".miykk_menu8"
+            android:exported="false" />
+        <activity
+            android:name=".miykk_menu7"
+            android:exported="false" />
+        <activity
+            android:name=".miykk_menu6"
+            android:exported="false" />
+        <activity
+            android:name=".miykk_menu5"
+            android:exported="false" />
+        <activity
+            android:name=".miykk_menu4"
+            android:exported="false" />
+        <activity
+            android:name=".miykk_menu3"
+            android:exported="false" />
+        <activity
+            android:name=".miykk_menu2"
+            android:exported="false" />
+        <activity
+            android:name=".miykk_menu1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".mixedrice_menu8"
+            android:exported="false" />
+        <activity
+            android:name=".mixedrice_menu7"
+            android:exported="false" />
+        <activity
+            android:name=".mixedrice_menu6"
+            android:exported="false" />
+        <activity
+            android:name=".mixedrice_menu5"
+            android:exported="false" />
+        <activity
+            android:name=".mixedrice_menu4"
+            android:exported="false" />
+        <activity
+            android:name=".mixedrice_menu3"
+            android:exported="false" />
+        <activity
+            android:name=".mixedrice_menu2"
+            android:exported="false" />
+        <activity
+            android:name=".mixedrice_menu1"
+            android:exported="false" />
+        <activity
+            android:name=".garlicbread_menu8"
+            android:exported="false" />
+        <activity
+            android:name=".garlicbread_menu7"
+            android:exported="false" />
+        <activity
+            android:name=".garlicbread_menu6"
+            android:exported="false" />
+        <activity
+            android:name=".garlicbread_menu5"
+            android:exported="false" />
+        <activity
+            android:name=".garlicbrad_menu5"
+            android:exported="false" />
+        <activity
+            android:name=".garlicbread5"
+            android:exported="false" />
+        <activity
+            android:name=".garlicbread_menu4"
+            android:exported="false" />
+        <activity
+            android:name=".garlicbread_menu3"
+            android:exported="false" />
+        <activity
+            android:name=".garlicbread_menu2"
+            android:exported="false" />
+        <activity
+            android:name=".garlicbread_menu1"
+            android:exported="false" />
+        <activity
+            android:name=".curry_menu7"
+            android:exported="false" />
+        <activity
+            android:name=".curry_menu6"
+            android:exported="false" />
+        <activity
+            android:name=".curry_menu5"
+            android:exported="false" />
+        <activity
+            android:name=".curry_menu4"
+            android:exported="false" />
+        <activity
+            android:name=".curry_menu3"
+            android:exported="false" />
+        <activity
+            android:name=".curry_menu2"
+            android:exported="false" />
+        <activity
+            android:name=".curry_menu1"
+            android:exported="false" />
+        <activity
+            android:name=".spaghettti_menu6"
+            android:exported="false" />
+        <activity
+            android:name=".my_page"
+            android:exported="false" />
+        <activity
             android:name=".spaghetti_menu5"
             android:exported="false" />
         <activity

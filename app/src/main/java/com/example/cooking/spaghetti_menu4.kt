@@ -1,6 +1,7 @@
 package com.example.cooking
 
 import android.content.ContentValues
+import android.content.Intent
 import android.icu.text.DecimalFormat
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -16,8 +17,8 @@ import kotlin.math.ceil
 class spaghetti_menu4 : AppCompatActivity() {
     private var timerTask: Timer? = null
     private var time = 0
-    private var cookingTime_min = 7; // 요리 시간 분
-    private var cookingTime_sec = 30; // 요리 시간 초
+    private var cookingTime_min = 0; // 요리 시간 분
+    private var cookingTime_sec = 3; // 요리 시간 초
     private var minmin = 0;
     private var secsec = 0;
     private var min1= 0;
@@ -25,6 +26,7 @@ class spaghetti_menu4 : AppCompatActivity() {
     private var ddd = 0;
     private var kkk = 0;
     private var flag = 0;
+    private var bb1 = 0 ;
 
 
     @RequiresApi(Build.VERSION_CODES.N)
@@ -41,6 +43,17 @@ class spaghetti_menu4 : AppCompatActivity() {
         }else{
             Log.e(ContentValues.TAG, "없음")
         }
+
+        //인텐트 넘기기
+        spaghetti4_button2.setOnClickListener {
+            if(flag == 1){
+                val intent = Intent(this, spaghetti_menu5::class.java)
+                intent.putExtra("min1", minmin)
+                intent.putExtra("sec1", bb1)
+                startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+            }
+        }
+
 
         //recyclerView = findViewById();
         spaghetti4_textView3.text = "[3 단계].  볶기 "	// TextView 세팅
@@ -94,6 +107,7 @@ class spaghetti_menu4 : AppCompatActivity() {
             // UI조작을 위한 메서드
             runOnUiThread {
                 var bb = df1.format(secsec + sec)
+                bb1 = secsec +sec
                 spaghetti4_textView5.text = "$a : $bb"	// TextView 세팅
                 spaghetti4_textView6.text = "$c : $d"	// TextView 세팅
             }

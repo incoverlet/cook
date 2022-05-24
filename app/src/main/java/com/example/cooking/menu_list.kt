@@ -24,10 +24,10 @@ class menu_list : AppCompatActivity() {
 
         val mageDrawableArray = getResources().obtainTypedArray(R.array.lv11)
         var array1 = arrayOf(
+            curry_menu1::class.java,
             spaghetti_menu1::class.java,
-            spaghetti_menu1::class.java,
-            spaghetti_menu1::class.java,
-            spaghetti_menu1::class.java,
+            garlicbread_menu1::class.java,
+            mixedrice_menu1::class.java,
             );
         val mageDrawableArray2 = getResources().obtainTypedArray(R.array.lv22)
         var array2 = arrayOf(
@@ -209,7 +209,7 @@ class menu_list : AppCompatActivity() {
             // Add LinearLayout to the CardView
             menuCardView.addView(generateCardView())
             // Finally, add the CardView in root layout
-            li_4.addView(menuCardView)
+
         }
     }
 
