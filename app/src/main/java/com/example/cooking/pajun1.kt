@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_mixedrice_menu1.*
+import kotlinx.android.synthetic.main.activity_pajun1.*
 
 class pajun1 : AppCompatActivity() {
     public var text1_foodname = "마늘빵"
@@ -16,18 +17,18 @@ class pajun1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pajun1)
 
-        var txt1 = findViewById(R.id.name_mixedrice_textView) as TextView
+        var txt1 = findViewById(R.id.name_pajun_textView) as TextView
         txt1.setText(text1_foodname)
 
-        var txt2 = findViewById(R.id.name_mixedrice_textView2) as TextView
+        var txt2 = findViewById(R.id.name_pajun_textView2) as TextView
         txt2.setText(text2)
 
-        var txt3 = findViewById(R.id.name_mixedrice_textView3) as TextView
+        var txt3 = findViewById(R.id.name_pajun_textView3) as TextView
         txt3.setText(text3)
 
 
-        menu_mixedrice_button1.setOnClickListener {
-            val intent = Intent(this, garlicbread_menu2::class.java)
+        menu_pajun_button1.setOnClickListener {
+            val intent = Intent(this, pajun2::class.java)
             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
         }
     }

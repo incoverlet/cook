@@ -15,12 +15,9 @@ import kotlinx.android.synthetic.main.activity_profile.*
 
 class menu_list : AppCompatActivity() {
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_list)
-
 
         val mageDrawableArray = getResources().obtainTypedArray(R.array.lv11)
         var array1 = arrayOf(
@@ -31,10 +28,10 @@ class menu_list : AppCompatActivity() {
             );
         val mageDrawableArray2 = getResources().obtainTypedArray(R.array.lv22)
         var array2 = arrayOf(
-            spaghetti_menu1::class.java,
-            spaghetti_menu1::class.java,
-            spaghetti_menu1::class.java,
-            spaghetti_menu1::class.java,
+            miykk_menu1::class.java,
+            gimch_menu1::class.java,
+            pajun1::class.java,
+            rose_menu1::class.java,
         );
         val mageDrawableArray3 = getResources().obtainTypedArray(R.array.lv33)
         var array3 = arrayOf(
@@ -171,46 +168,6 @@ class menu_list : AppCompatActivity() {
             li_3.addView(menuCardView)
         }
         //level4
-        for( i in 0..3) {
-            // Initialize a new LayoutParams instance, CardView width and height
-            val layoutParams = RelativeLayout.LayoutParams(
-                500,// CardView width
-                500 // CardView height
-            )
-            layoutParams.setMargins(75,75,75,75)
-            val menuCardView = CardView(this)
-            // Set bottom margin for card view
-            //layoutParams.bottomMargin = 50
-            // Set the card view layout params
-            menuCardView.layoutParams = layoutParams
-            // Set the card view corner radius
-            menuCardView.radius =  12F
-            // Set the card view content padding
-            menuCardView.setContentPadding(75,75,75,75)
-            // Set the card view background color
-            menuCardView.setCardBackgroundColor(Color.LTGRAY)
-            //list에 해당하는 그림으로 변경
-            var drawable = mageDrawableArray.getDrawable(i)
-            menuCardView.setBackgroundDrawable(drawable)
-            // Set card view elevation
-            menuCardView.cardElevation = 8F
-            // Set card view maximum elevation
-            menuCardView.maxCardElevation = dpToPx(this, 80f)
-            // Set a click listener for card view
-            menuCardView.setOnClickListener{
-                Toast.makeText(
-                    applicationContext,
-                    "해당하는 음식 이동"+ drawable.toString(),
-                    Toast.LENGTH_SHORT).show()
-                //이동
-                val intent = Intent(this, array1[i])
-                startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
-            }
-            // Add LinearLayout to the CardView
-            menuCardView.addView(generateCardView())
-            // Finally, add the CardView in root layout
-
-        }
     }
 
     private fun dpToPx(context: Context, dp: Float): Float {

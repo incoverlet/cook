@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cooking">
         <activity
+            android:name=".ttts"
+            android:exported="false" />
+        <activity
             android:name=".pajun9"
             android:exported="false" />
         <activity
@@ -107,9 +110,6 @@
             android:exported="false" />
         <activity
             android:name=".miykk_menu1"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity3"
             android:exported="false" />
         <activity
             android:name=".mixedrice_menu8"
@@ -224,9 +224,6 @@
             android:exported="false" />
         <activity
             android:name=".spaghetti_menu"
-            android:exported="false" />
-        <activity
-            android:name=".advance_level1"
             android:exported="false" />
         <activity
             android:name=".beginner_level1"

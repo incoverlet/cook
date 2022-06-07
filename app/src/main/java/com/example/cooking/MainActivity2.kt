@@ -31,5 +31,11 @@ class MainActivity2 : AppCompatActivity() {
             val intent = Intent(this, menu_list::class.java)
             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
         }
+
+        main2_button2213123.setOnClickListener{
+            val intent = Intent(this, pajun1::class.java)
+            startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+        }
+
     }
 }

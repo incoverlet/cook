@@ -3,11 +3,14 @@ package com.example.cooking
 import android.content.ContentValues
 import android.content.Intent
 import android.icu.text.DecimalFormat
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_garlicbread_menu4.*
+import kotlinx.android.synthetic.main.activity_miykk_menu4.*
 import java.util.*
 import kotlin.math.ceil
 
@@ -25,6 +28,7 @@ private var flag = 0;
 private var bb1 = 0 ;
 
 class miykk_menu4 : AppCompatActivity() {
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_miykk_menu4)
@@ -42,9 +46,9 @@ class miykk_menu4 : AppCompatActivity() {
         secsec = sec1
 
         //인텐트 넘기기
-        garlicbread4_button2.setOnClickListener {
+       miykk4_button2.setOnClickListener {
             if(flag == 1){
-                val intent = Intent(this,garlicbread_menu5::class.java)
+                val intent = Intent(this,miykk_menu5::class.java)
                 intent.putExtra("min1", minmin)
                 intent.putExtra("sec1", bb1)
                 startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
@@ -52,9 +56,10 @@ class miykk_menu4 : AppCompatActivity() {
         }
 
         //recyclerView = findViewById();
-        garlicbread4_textView3.text = "[3 단계]. 재료 볶기"	// TextView 세팅 8글자 넘어가면 넘어가버림.
-        garlicbread4_textView4.text = "파와 양파의 향이 올라오면\n 당근과 햄을 볶다가\n  소금과 후추를 넣고" +
-                "간을 해줍니다."
+        miykk4_textView3.text = "[2 단계]. 재료 볶기2"	// TextView 세팅 8글자 넘어가면 넘어가버림.
+        miykk4_textView4.text = "고기의 색이 붉은색에서 갈색으로 좀 바뀌었으면 국간장 2숟갈과 미역을 넣어\n" +
+                "같이 볶아주세요. \n" +
+                "넉넉하게 볶아 주어야 국물이 진하고 맛있답니다."
 
 
 
@@ -104,8 +109,8 @@ class miykk_menu4 : AppCompatActivity() {
             runOnUiThread {
                 var bb = df1.format(secsec + sec)
                 bb1 = secsec + sec
-                garlicbread4_textView5.text = "$a : $bb"	// TextView 세팅
-                garlicbread4_textView6.text = "$c : $d"	// TextView 세팅
+                miykk4_textView5.text = "$a : $bb"	// TextView 세팅
+                miykk4_textView6.text = "$c : $d"	// TextView 세팅
             }
 
             // 7분 조리시간

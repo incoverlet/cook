@@ -5,11 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_mixedrice_menu1.*
+import kotlinx.android.synthetic.main.activity_miykk_menu1.*
 
 
-public var text1_foodname = "마늘빵"
-public var text2  = "재료 \n "+" 남은 식빵 아무거나\n" +
-        "마요네즈 3큰술\n" + "마늘2개\n 파슬리(생략 가능)"
+public var text1_foodname = "소고기미역국"
+public var text2  = "마른 미역 한 컵 \n 국거리용 소고기 150g\n 쌀뜨물\n 참기름 2숟갈\n 다진 마늘 1숟갈\n 국간장 2숟갈"
 private var text3 = "권장소비 소유 시간 15"
 
 class miykk_menu1 : AppCompatActivity() {
@@ -18,18 +18,18 @@ class miykk_menu1 : AppCompatActivity() {
         setContentView(R.layout.activity_miykk_menu1)
 
 
-        var txt1 = findViewById(R.id.name_mixedrice_textView) as TextView
+        var txt1 = findViewById(R.id.name_miykk_textView) as TextView
         txt1.setText(text1_foodname)
 
-        var txt2 = findViewById(R.id.name_mixedrice_textView2) as TextView
+        var txt2 = findViewById(R.id.name_miykk_textView2) as TextView
         txt2.setText(text2)
 
-        var txt3 = findViewById(R.id.name_mixedrice_textView3) as TextView
+        var txt3 = findViewById(R.id.name_miykk_textView3) as TextView
         txt3.setText(text3)
 
 
-        menu_mixedrice_button1.setOnClickListener {
-            val intent = Intent(this, garlicbread_menu2::class.java)
+        menu_miykk_button1.setOnClickListener {
+            val intent = Intent(this, miykk_menu2::class.java)
             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
         }
     }

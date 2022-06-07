@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_garlicbread_menu2.*
+import kotlinx.android.synthetic.main.activity_miykk_menu2.*
 
 class miykk_menu2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,11 +16,11 @@ class miykk_menu2 : AppCompatActivity() {
 
 
 
-        var txt3 = findViewById(R.id.menu_garlic_2_text1) as TextView
+        var txt3 = findViewById(R.id.menu_miykk_2_text1) as TextView
         txt3.setText(text3)
 
-        menu_garlic_2_button1.setOnClickListener {
-            val intent = Intent(this, garlicbread_menu3::class.java)
+        menu_miykk_2_button1.setOnClickListener {
+            val intent = Intent(this, miykk_menu3::class.java)
             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
         }
     }

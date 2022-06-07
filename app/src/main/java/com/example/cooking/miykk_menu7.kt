@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.annotation.RequiresApi
 import kotlinx.android.synthetic.main.activity_mixedrice_menu6.*
+import kotlinx.android.synthetic.main.activity_miykk_menu7.*
 import java.util.*
 import kotlin.math.ceil
 
@@ -43,9 +44,9 @@ class miykk_menu7 : AppCompatActivity() {
         secsec = sec1
 
         //인텐트 넘기기
-        mixedrice6_button2.setOnClickListener {
+        miykk7_button2.setOnClickListener {
             if (flag == 1) {
-                val intent = Intent(this, garlicbread_menu7::class.java)
+                val intent = Intent(this, miykk_menu8::class.java)
                 intent.putExtra("min1", minmin)
                 intent.putExtra("sec1", bb1)
                 startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
@@ -53,8 +54,8 @@ class miykk_menu7 : AppCompatActivity() {
         }
 
         //recyclerView = findViewById();
-        mixedrice6_textView3.text = "[5 단계]. 플래이팅"    // TextView 세팅 8글자 넘어가면 넘어가버림.
-        mixedrice6_textView4.text = "눌러 붙지 않게 저으면서 \n 끓여주면 완성입니다."
+        miykk7_textView3.text = "[6 단계]. 플래이팅"    // TextView 세팅 8글자 넘어가면 넘어가버림.
+        miykk7_textView4.text = "미역국은 특별한 플레이팅이 필요없습니다 \n 예쁜 국그릇에 담아 맛있게 드세요."
 
 
 
@@ -103,8 +104,8 @@ class miykk_menu7 : AppCompatActivity() {
             runOnUiThread {
                 var bb = df1.format(secsec + sec)
                 bb1 = secsec + sec
-                mixedrice6_textView5.text = "$a : $bb"    // TextView 세팅
-                mixedrice6_textView6.text = "$c : $d"    // TextView 세팅
+                miykk7_textView5.text = "$a : $bb"    // TextView 세팅
+                miykk7_textView6.text = "$c : $d"    // TextView 세팅
             }
 
             // 7분 조리시간
