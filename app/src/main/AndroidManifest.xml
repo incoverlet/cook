@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cooking">
         <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
             android:name=".ttts"
             android:exported="false" />
         <activity

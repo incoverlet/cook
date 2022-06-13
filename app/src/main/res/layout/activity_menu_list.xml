@@ -37,19 +37,12 @@
                     android:minHeight="100dp"
                     android:layout_weight="0.25" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:minHeight="250dp"
-                    android:layout_weight="0.5"
-                    android:background="#446D6D6D" />
-
                 <TextView
                     android:id="@+id/name_spagetti_textView"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:minHeight="250dp"
-                    android:layout_weight="0.5"
+                    android:layout_weight="1"
                     android:autoSizeTextType="uniform"
                     android:background="#446D6D6D"
                     android:fontFamily="sans-serif"
@@ -57,7 +50,7 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingBottom="20dp"
-                    android:text="New receipe \n지금바로 도전해 보세요"
+                    android:text="\n\nNew receipe \n지금바로 도전해 보세요"
                     android:textColor="#000000"
                     android:textStyle="bold" />
 

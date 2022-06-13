@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         main_btn_2.setOnClickListener {
-            val intent = Intent(this, ttts::class.java)
+            val intent = Intent(this,  MainActivity3::class.java)
             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
         }
 

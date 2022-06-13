@@ -17,7 +17,7 @@ class curry_menu1 : AppCompatActivity() {
     public var text1_foodname = "카레라이스"
     public var text2  = "재료 \n "+" 양파, 햄, 당근 반 개,\n" +
             "감자(증), 밥\n"
-    private var text3 = "권장소비 소유 시간 15"
+    private var text3 = "권장소비 소유 시간 1115"
 
     private var tts: TextToSpeech? = null
     private var btnSpeak: Button? = null

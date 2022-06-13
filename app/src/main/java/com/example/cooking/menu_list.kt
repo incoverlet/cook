@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import androidx.viewpager2.widget.ViewPager2
 import kotlinx.android.synthetic.main.activity_menu_list.*
 import kotlinx.android.synthetic.main.activity_profile.*
 
@@ -18,6 +19,8 @@ class menu_list : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_list)
+
+
 
         val mageDrawableArray = getResources().obtainTypedArray(R.array.lv11)
         var array1 = arrayOf(
@@ -41,6 +44,8 @@ class menu_list : AppCompatActivity() {
             spaghetti_menu1::class.java,
         );
         //var drawable = mageDrawableArray.getDrawable(0)
+
+
 
         //배열의 길이만큼 선언해줘야함
         //level1
